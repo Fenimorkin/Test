@@ -1,27 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+<style type="text/css">
+.main-menu{
+    width:180px;
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.main-menu>li{
+    border:1px solid #E5E5E5;
+    margin-bottom:-1px;
+}    
+.main-menu a{
+    display:block;
+    padding:8px 14px;
+    color:#0088CC;
+    text-decoration:none;
+}
+.main-menu a:hover{
+    background:#F5F5F5;
+}
+.main-menu>.active>a{
+    color:white;
+    background:#0088CC;
+}
+.main-menu ul{
+    padding:5px 0 5px 30px;
+    margin:0;
+    list-style:none;
+}
+.main-menu li li a{
+    padding:3px 0;
+    color:black;
+}
+.main-menu li li a:hover{
+    text-decoration:underline;
+    background:none;
+}
+body{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    line-height:1.4;
+    padding:10px;
+}
+table {
+	border:1px solid black;
+	border-collapse: collapse;
+}
+td {
+	border:1px solid #ccc;
+}
+</style>
 <head>
 	<meta charset="UTF-8">
 	<title>Git lesson 1</title>
+	<!-- Bootstrap CSS Include -->
+	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+
 </head>
 <body>
 <h1>Git lesson 1</h1>
-	<nav>
-		<ul>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-		</ul>
-		<ul>
-			<li>6</li>
-			<li>7</li>
-			<li>8</li>
-			<li>9</li>
-			<li>10</li>
-		</ul>
-	</nav>
-	<p>новое изменение</p>
+
+<?php
+	echo "<p>Sudo subl test Hellow world</p>";
+?>
+
+
+<table>
+	<tr>
+		<td>
+			<nav>
+				<ul class="main-menu">
+		            <li><a href="#company">О компании</a></li>
+		            <li class="active"><a href="#services">Услуги</a>
+		                <ul>
+		                    <li><a href="#s1">Разработка</a></li>
+		                    <li><a href="#s2">Продвижение</a></li>
+		                    <li><a href="#s3">Контекст</a>
+		                        <ul>
+		                            <li><a href="#ya">Яндекс</a></li>
+		                            <li><a href="#go">Google</a></li>
+		                        </ul>
+		                    </li>
+		                </ul>
+		            </li>
+		            <li><a href="#team">Сотрудники</a></li>
+		            <li><a href="#contacts">Контакты</a></li>
+		        </ul>
+			</nav>	
+		</td>
+		<td>
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur harum, dicta, animi soluta nostrum et voluptate vitae recusandae illum, asperiores nobis laborum amet incidunt odio similique, quia non modi iste.</span>
+			<span>Cupiditate ut ab perferendis quae praesentium velit impedit labore asperiores aut, quis voluptatibus esse illum recusandae numquam tenetur neque, assumenda odio dicta ipsum? Facilis libero aliquam enim officia nesciunt totam?</span>
+			<span>Doloribus repellat, possimus nulla! Corporis quasi nisi quidem distinctio praesentium accusantium ipsum quia aperiam, architecto, voluptatibus ducimus. Culpa laudantium repudiandae ullam perspiciatis voluptatum accusamus illo, quibusdam mollitia, eum debitis cupiditate.</span>
+			<span>Minima labore blanditiis quia dicta ipsum reiciendis neque perspiciatis provident voluptatem est sequi eum sapiente, commodi! Vitae sed laborum tenetur harum quas, laboriosam vel ipsum delectus maxime architecto perferendis, facere?</span>
+			<span>Aperiam id ipsa consequuntur, unde quidem voluptates tempora mollitia eum? Officia optio voluptas sequi perspiciatis nam, ipsum iusto sit odit, voluptatum consequuntur esse ad suscipit harum, rem aliquam dolore, hic!</span>
+			<span>Nostrum quo dolores, reprehenderit deleniti soluta non dolorem veniam aperiam, cum in, aut accusamus ullam. Tempore fugit ipsam totam, nobis voluptatem, itaque adipisci dolor facere laborum. Mollitia sapiente tenetur, maxime.</span>
+			<span>Quos soluta blanditiis, tenetur quaerat illo repellat harum dolorum quam sunt ipsum. Laboriosam recusandae, earum eius. Aperiam accusantium atque laudantium, ipsum. Eius libero maiores ex ad, nulla qui? Aspernatur, blanditiis.</span>
+			<span>Velit quaerat quae commodi recusandae aspernatur natus eveniet asperiores! Amet dolorem neque harum saepe at sint, ipsam voluptates quis accusantium quo nesciunt assumenda rerum, ipsum nulla tempora, doloremque laudantium non?</span>
+			<span>Vero, dolore, quaerat. Atque doloribus alias sint molestias deserunt id, nulla non sapiente, perferendis cum cumque consectetur quis rem. Molestias architecto repudiandae, eius quidem molestiae exercitationem similique at tempore quas.</span>
+			<span>Dolore facilis unde odit ea, voluptatem provident, in eveniet nostrum architecto laboriosam est, molestiae minima. Quae eligendi ipsum aliquid cupiditate ratione, molestiae veniam ducimus dolor atque necessitatibus, beatae modi doloribus.</span></p>	
+		</td>
+	</tr>
+</table>
+
+<table class='content'>
+	<tr>
+		<td>
+			<p>Something blabla bla</p>	
+		</td>
+		<td>	
+				<p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere commodi porro eum blanditiis quibusdam incidunt, modi! Quam nulla, reiciendis aliquam rem quod alias velit voluptas cum veritatis laborum, molestias ipsam.</span>
+				<span>Recusandae quod, sapiente saepe, esse odit architecto provident commodi error assumenda totam distinctio ducimus, suscipit molestiae, similique! Expedita nisi sapiente odio placeat cumque minus explicabo, tenetur, sunt recusandae ut quae.</span>
+				<span>Eum adipisci sint nobis molestiae harum itaque modi iste voluptatem consequuntur impedit asperiores nemo delectus, dolorem blanditiis, quo, commodi expedita veritatis dolores quisquam vero quos cupiditate. Atque illum quod sapiente.</span>
+				<span>Magnam nam, deserunt ullam voluptas omnis dignissimos quo porro consectetur recusandae fugit quis debitis ea minima iusto nihil aut culpa, provident nisi quam velit incidunt nulla minus. Quasi, quis, beatae.</span>
+				<span>Sunt, inventore voluptate. Dignissimos deleniti dolores perspiciatis, unde magni, voluptatem eaque quae quia nam itaque minus officiis officia, voluptatum ducimus nesciunt ad tempore cupiditate. Harum nulla officiis doloremque architecto nobis.</span>
+				<span>Unde delectus quam facere corporis odit, libero dicta tempora, eum expedita minima, quo alias voluptatibus repudiandae enim natus vero recusandae asperiores quis iste dolorum consequatur praesentium minus. Veritatis, quia, culpa!</span>
+				<span>Ea autem exercitationem in iure repellat, delectus quam molestiae earum? Fugiat odit, sint culpa inventore totam nesciunt ratione, eaque animi ducimus, quia blanditiis ipsam dolorum tenetur aspernatur magni excepturi ad.</span>
+				<span>Iure illum vitae voluptate amet exercitationem, sit placeat expedita a et repellat ea excepturi sequi veritatis temporibus eum quis. Repellat quasi nobis labore recusandae numquam voluptatum autem excepturi non voluptates!</span>
+				<span>Natus fugiat assumenda architecto voluptatibus ab. Id doloremque, tempora incidunt. Voluptas aut officiis quo rerum similique, necessitatibus reprehenderit, ut doloremque quis nam vitae est iste. Inventore error reprehenderit enim cupiditate.</span>
+				<span>Ullam magni ex illum, ducimus repellendus quia. Voluptatum repellat voluptatibus id rem eaque! Ullam earum dolor eos nihil reprehenderit libero cupiditate blanditiis cumque, consequuntur nisi tempora eaque. Quibusdam, cupiditate, placeat.</span>
+				</p>
+				
+		</td>
+	</tr>
+</table>
+
+<!-- Так отрабатывает Дзен 
+.maincont>.container>.row*3>.col-md-4*3>lorem*1 
+И это с подключенным bootstrap`m разворачивают элементы типа 4-колонки 
+-->
+<div class="maincont">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis sequi nulla similique corporis fugit, quas, eos ullam consectetur quae! Sit tempora consequuntur, aliquam minima culpa consequatur unde, nisi voluptatum.</div>
+			<div class="thumbnail">
+                <img src="http://goo.gl/0sX3jq">
+            </div>
+			<div class="col-md-4">Non, dolorum, ut! Autem labore esse, similique dolorum, repellat porro obcaecati, expedita eligendi impedit ducimus provident. Rem, magni, neque. Excepturi porro adipisci a omnis doloremque, minima! Dolores dolor, quas distinctio!</div>
+			<div class="col-md-4">Tempora ipsa explicabo aut placeat. Eos mollitia veritatis fugit fuga, autem odit porro asperiores incidunt nostrum repellendus pariatur ipsa sequi architecto saepe eaque molestiae possimus itaque consequatur reprehenderit explicabo animi!</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis voluptatum vitae voluptates itaque, et expedita, mollitia voluptas ipsa ullam error molestias, repellendus placeat similique excepturi perferendis molestiae tenetur aspernatur!</div>
+			<div class="col-md-4">Dignissimos soluta necessitatibus, totam quod amet omnis nobis eveniet consequatur ut architecto rem ea error laborum aperiam ullam officiis facilis vel expedita at, facere, ipsam vero itaque nesciunt. Quasi, minus?</div>
+			<div class="col-md-4">Quod odit inventore similique ipsum? Reiciendis quia error, maxime dolorum sapiente officia obcaecati, enim quibusdam illum ipsa dicta incidunt velit minus et explicabo quis maiores veniam voluptatem, natus non harum.</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione unde necessitatibus vitae, esse repellat dolore recusandae odio reprehenderit, cumque impedit numquam. Quas ipsa, repellat numquam perspiciatis quasi perferendis, fugit dolor!</div>
+			<div class="col-md-4">Non voluptatum quas nesciunt ut reiciendis animi minima nihil voluptatibus nostrum repudiandae. Sed iste dolores ea nisi quibusdam fugit minima? Unde tenetur dolores, provident saepe nisi aliquam iusto voluptatem veritatis.</div>
+			<div class="col-md-4">Blanditiis magnam, eaque architecto iure impedit harum similique dolor obcaecati sapiente soluta reiciendis, itaque suscipit omnis, cupiditate, esse eveniet quia consequatur accusantium voluptate earum voluptas assumenda ex mollitia. Dolor, quia?</div>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
